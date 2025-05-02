@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "nuxt": "^3.17.1",
@@ -22,18 +23,11 @@
     "eslint": "^9.25.1",
     "eslint-plugin-format": "^1.0.1",
     "eslint-plugin-regexp": "^2.7.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
     "typescript": "^5.8.3"
   },
-  "pnpm": {
-    "overrides": {
-      "@vercel/nft": "^0.27.4"
-    },
-    "onlyBuiltDependencies": [
-      "@sentry/cli",
-      "vue-demi"
-    ]
-  },
   "lint-staged": {
-    "*": "pnpm lint"
+    "*": "npm run lint"
   }
 }
