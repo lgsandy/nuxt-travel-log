@@ -8,6 +8,13 @@
       "when": 1746609162139,
       "tag": "0000_lonely_sir_ram",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1746611384349,
+      "tag": "0001_aspiring_chamber",
+      "breakpoints": true
     }
   ]
 }
